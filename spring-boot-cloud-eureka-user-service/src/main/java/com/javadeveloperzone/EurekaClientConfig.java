@@ -13,7 +13,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.http.client.ClientHttpRequestInterceptor;
-import org.springframework.security.oauth2.config.annotation.web.configuration.EnableResourceServer;
+//import org.springframework.security.oauth2.config.annotation.web.configuration.EnableResourceServer;
 import org.springframework.util.CollectionUtils;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.servlet.DispatcherServlet;
@@ -30,7 +30,7 @@ import java.util.List;
 @SpringBootApplication
 @ComponentScan // Using a root package also allows the @ComponentScan annotation to be used without needing to specify a basePackage attribute
 @EnableEurekaClient         // To enable eureka client
-@EnableResourceServer
+//@EnableResourceServer
 @EnableSwagger2
 public class EurekaClientConfig {
 

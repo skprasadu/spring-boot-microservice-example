@@ -1,0 +1,45 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 .AppleSystemUIFontMonospaced-Regular;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red189\green198\blue208;\red18\green21\blue26;\red0\green0\blue0;
+\red150\green204\blue255;\red172\green172\blue172;\red32\green32\blue32;}
+{\*\expandedcolortbl;;\cssrgb\c78824\c81961\c85098;\cssrgb\c8627\c10588\c13333;\csgray\c0;
+\cssrgb\c64706\c83922\c100000;\cssrgb\c72941\c72941\c72941;\cssrgb\c16863\c16863\c16863;}
+\margl1440\margr1440\vieww21140\viewh11640\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs27\fsmilli13600 \cf2 \cb3 \expnd0\expndtw0\kerning0
+mvn clean package -f ./spring-boot-cloud-eureka-server/pom.xml\
+mvn clean \cf2 \cb3 package\cf2 \cb3  -f ./
+\f1\fs22 \cf4 \cb1 \kerning1\expnd0\expndtw0 \CocoaLigature0 spring-boot-cloud-api-gateway-routing
+\f0\fs27\fsmilli13600 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\CocoaLigature1 /pom.xml\
+mvn clean \cf2 \cb3 package\cf2 \cb3  -f ./spring-boot-cloud-eureka-user-service/pom.xml\
+mvn clean \cf2 \cb3 package\cf2 \cb3  -f ./spring-boot-cloud-eureka-order-service/pom.xml\
+mvn clean \cf2 \cb3 package\cf2 \cb3  -f ./spring-boot-cloud-eureka-notification-service/pom.xml\
+mvn clean \cf2 \cb3 package\cf2 \cb3  -f ./spring-boot-cloud-authentication-service/pom.xml\
+\
+\
+START \cf5 \cb3 "Server"\cf2 \cb3  java -jar spring-boot-cloud-eureka-server/target/eureka-server.jar \
+START \cf5 \cb3 "API Gateway"\cf2 \cb3  java -jar 
+\f1\fs22 \cf4 \cb1 \kerning1\expnd0\expndtw0 \CocoaLigature0 spring-boot-cloud-api-gateway-routing
+\f0\fs27\fsmilli13600 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\CocoaLigature1 /target/zuul-api-gateway.jar --server.port=8080 \
+START \cf5 \cb3 "User Service"\cf2 \cb3  java -jar spring-boot-cloud-eureka-user-service/target/user-service.jar --server.port=8181\
+START \cf5 \cb3 "Order Service"\cf2 \cb3  java -jar spring-boot-cloud-eureka-order-service/target/order-service.jar --server.port=8282\
+START \cf5 \cb3 "Notification Service"\cf2 \cb3  java -jar spring-boot-cloud-eureka-notification-service/target/notification-service.jar --server.port=8383\
+START \cf5 \cb3 "Authentication Service"\cf2 \cb3  java -jar spring-boot-cloud-authentication-service/target/authentication-service.jar --server.port=8484\
+\
+curl -X POST \\\
+  http://localhost:8080/oauth/token \\\
+  -H \cf5 \cb3 'authorization: Basic amF2YWRldmVsb3BlcnpvbmU6c2VjcmV0'\cf2 \cb3  \\\
+  -H \cf5 \cb3 'cache-control: no-cache'\cf2 \cb3  \\\
+  -H \cf5 \cb3 'content-type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW'\cf2 \cb3  \\\
+  -H \cf5 \cb3 'postman-token: d2629b30-a7cf-fa72-df64-d71118afb549'\cf2 \cb3  \\\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs24\fsmilli12250 \cf6 \cb7   -d \'91grant_type=password&user=zone1&password=mypassword\'92
+\f0\fs27\fsmilli13600 \cf2 \cb3 \
+  -H grant_type=password \\\
+  -F username=zone1 \\\
+  -F password=mypassword}
