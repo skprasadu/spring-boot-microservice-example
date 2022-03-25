@@ -93,11 +93,9 @@ curl -X POST \
   http://localhost:8080/oauth/token \
   -H 'authorization: Basic amF2YWRldmVsb3BlcnpvbmU6c2VjcmV0' \
   -H 'cache-control: no-cache' \
-  -H 'content-type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW' \
+  -H 'content-type: application/x-www-form-urlencoded' \
   -H 'postman-token: d2629b30-a7cf-fa72-df64-d71118afb549' \
-  -F grant_type=password \
-  -F username=zone1 \
-  -F password=mypassword
+  --data "grant_type=password&username=zone1&password=mypassword"
 ```
 ### 4.2 Using swagger
     In the swagger UI, There is a "Autorize" button on the top, click on it it will open the following popup:
