@@ -1,6 +1,6 @@
 # Spring boot microservice example [![Build Status](https://travis-ci.com/subhashlamba/spring-microservices.svg?branch=master)](https://travis-ci.com/subhashlamba/spring-microservices)
 
-Spring boot microservice example with Eureka Server + Eureka Client + Spring Cloud API Gateway + OAuth2.0 + Circuit Breaker + Resilience4J + FeignClient + RestTemplate
+Spring boot microservice example with Eureka Server + Eureka Client + Spring Cloud API Gateway + OAuth2.0 + Circuit Breaker + Resilience4J + FeignClient + RestTemplate. This does not need Kubernetes
 
  - **Eureka Server** : Eureka service registry
  - **Spring Cloud API Gateway**: API Gateway which is responsible to route the request to specific microservice
