@@ -20,8 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c55492b-14a4-47db-bca7-e4293d1c7383" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-cloud-api-gateway-routing/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-cloud-api-gateway-routing/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-cloud-authentication-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-cloud-authentication-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-cloud-eureka-notification-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-cloud-eureka-notification-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-cloud-eureka-order-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-cloud-eureka-order-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-cloud-eureka-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-cloud-eureka-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-cloud-eureka-user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-cloud-eureka-user-service/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +35,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -69,7 +77,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1620050862421">
